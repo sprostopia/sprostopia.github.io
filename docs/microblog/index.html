@@ -8,39 +8,29 @@
     <body> 
         <h1>Microblog</h1>
         <a href="../"><p style="text-align: center;">&lt- Return home</p></a>
+
         <!-- Next Post -->
-        <div class="entry">
-            <h2>Yipee!!!!</h2>
-            <h3><i>26/08/26, 22:14:29</i></h3>
-            <p>It worked!<br>New lines for daysssss</p>
+        <div class="entry" id="4">
+            <h2>Reflection</h2>
+            <h3><i>26/08/26, 23:16:41 </i><a href="#4">Shareable link</a></h3>
+            <p>Okay, so i think I&#x27;ll probably need a json file or smth. It&#x27;s not ideal, but if I need to change things about how the posts are formatted, I currently have to manually edit each post which is kinda crap. It&#x27;ll be annoying for if I want to add links / images tho. hmm maybe the json file could store the html somehow?? Idk it&#x27;s late, I&#x27;m tired, I&#x27;m gonna go watch a mindless trackmania video for a few minutes to turn my brain off.<br><br>Important life advice! Don&#x27;t attempt to sleep after a programming session, or anything that requires thought. You will not sleep and will lie in bed, eyes closed, seeing html tags.</p>
         </div>      
-        
-        <div class="entry">
-            <h2>Now?</h2>
-            <h3><i>26/08/26, 22:13:45</i></h3>
-            <p>Please<br>Work</p>
+    
+        <div class="entry" id="3">
+            <h2>Ok so this is kinda working</h2>
+            <h3><i>26/08/26, 23:05:28</i>  <a href="#3">Shareable link</a></h3>
+            <p>Although I just realised I currently don&#x27;t have a convenient way for people to share the links to the posts, like they&#x27;d have to right-click the link and copy it which is a pain.<br>I need to find a way for them to just click the copy link button and it copies it for them, although I think that&#x27;ll require some Javascript.<br><br>I need to be careful about not getting stuck here, all I need is the rudimentary functionality for the time being. I shouldn&#x27;t overcomplicate stuff.</p>
         </div>      
-        
-        <div class="entry">
-            <h2>What about now?</h2>
-            <h3><i>26/08/26, 22:13:21</i></h3>
-            <p>Hello\nthis is a test\n please work</p>
+
+        <div class="entry" id="2">
+            <h2>Plan</h2>
+            <h3><i>26/08/26, 22:32:21</i> <a href="#2">Shareable link</a></h3></h3>
+            <p>So yeah, I think this&#x27;ll be the spam section of my website. Just utter random short crap ig.<br>I&#x27;m having a bit of a struggle trying to figure out whether I should actually be keeping all of these entries in a big JSON file or something, but then that feels less flexible if I like want to modify the raw html of a post, like if I want to add an image, for example. It&#x27;s tough. Cos rn, they&#x27;re not really saved in a very convenient format. Like if I wanted to do something else to them in the future, or like modify how the date&#x27;s written or something. Hmmm. I&#x27;ll try not to get bogged down in it too much. Let&#x27;s focus on the positives: I have a microblog, I can easily add things too without having to write a bunch of html by hand, and yh if I realise I need a big refactor or something in the future, I don&#x27;t think it&#x27;ll be too hard to write like an extractor to get them out of the html again! Like maybe if I want them to be searchable or something, that could be cool... Or like referenceable? Maybe I should add that, like when URLs have the #s to point to a certain part of a page, like there could be a share link next to each microblog post and then you can send it, and if someone clicks on it then it&#x27;ll take you to the correct microblog post? Maybe they all need their own ID or something... At least internally ig. Hmm I&#x27;ll look into it. But yeah pretty cool right??</p>
         </div>      
-        
-        <div class="entry">
-            <h2>Ok I&#x27;m trying something different with the newlines</h2>
-            <h3><i>26/08/26, 22:11:39</i></h3>
-            <p>Hello\nI hope this is on a newline\nand this is also :)</p>
-        </div>      
-        
-        <div class="entry">
-            <h2>Second blog post</h2>
-            <h3><i>26/08/26, 22:07:39</i></h3>
-            <p>I really hope this works. This is a test to see how different blog posts look. Good, hopefully.\nI wonder if a new line works? Let&#x27;s hope so :)\n Oh, also lets test the html characters that need escaping, like &lt;/p&gt; or #%/ or smth idk</p>
-        </div>      
-        <div class="entry">
+    
+        <div class="entry" id="1">
             <h2>Hello</h2>
-            <h3><i>26/08/26, 20:03:40</i></h3>
+            <h3><i>26/08/26, 20:03:40</i> <a href="#1">Shareable link</a></h3></h3>
             <p>World!</p>
         </div>      
     </body>
