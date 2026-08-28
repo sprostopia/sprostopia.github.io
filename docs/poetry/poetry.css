@@ -9,6 +9,11 @@ td
 }
 p
 {
-    text-align: center;
+    text-align: left;
     font-size: larger;
+}
+.poem
+{
+    margin:0 auto;
+    max-width: max-content;
 }

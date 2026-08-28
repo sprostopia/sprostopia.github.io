@@ -24,9 +24,11 @@ with open(f"docs/poetry/{title.lower().replace(' ', '-')}.html", 'w', encoding="
     </head>
     <body>
         <h1><b>{title}</b></h1>
-        <p>
-            {poem}
-        </p>
+        <div class="poem">
+            <p>
+                {poem}
+            </p>
+        </div>
         <a href="index.html"><p style="text-align: center;">&lt- All poems</p></a>
     </body>
 </html>"""
