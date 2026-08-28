@@ -7,3 +7,8 @@ td
     border-left: 0px;
     font-size: 10vmin;
 }
+p
+{
+    text-align: center;
+    font-size: larger;
+}

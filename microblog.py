@@ -2,10 +2,19 @@
 import json, html, datetime
 
 title = html.escape(input("Enter a post title:\n"))
-message = html.escape(input("Message:\n")).replace("\\n", "<br>")
 
+#Use Ctrl + C to stop entering
+message = ""
+print("Message:")
+while True:
+    try:
+        message += html.escape(input("> ")) + "<br>"
+    except KeyboardInterrupt:
+        break
 
-with open("docs/microblog/index.html", "r") as file:
+message = message[:-4]
+
+with open("docs/microblog/index.html", "r", encoding="UTF-8") as file:
     page = str(file.read())
 
     #Gets the ID of the last post and adds one
