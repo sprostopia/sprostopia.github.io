@@ -27,7 +27,18 @@ with open(f"docs/poetry/{title.lower().replace(' ', '-')}.html", 'w', encoding="
         <p>
             {poem}
         </p>
-        <a href="../"><p style="text-align: center;">&lt- Return home</p></a>
+        <a href="index.html"><p style="text-align: center;">&lt- All poems</p></a>
     </body>
 </html>"""
     )
+
+with open("docs/poetry/index.html", "r") as f:
+    page = f.read()
+    page = page.replace("<!-- Next Poem-->",
+f"""<tr>
+                <td><a href="{title.lower().replace(' ', '-')}.html">{title}</a></td>
+            </tr>
+            <!-- Next Poem-->""")
+
+with open("docs/poetry/index.html", "w") as f:
+    f.write(page)
